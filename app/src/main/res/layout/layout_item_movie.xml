@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#00FFFFFF"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_layout"
+        android:layout_margin="10dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:paddingBottom="15dp"
+                android:id="@+id/img_movie"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:alpha=".5"
+                android:scaleType="fitCenter"
+                android:tint="@color/main_color"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/movie" />
+            <TextView
+                android:id="@+id/txt_rateing"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_3_5_10"
+                android:background="@color/main_color"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/white"
+                app:drawableTint="@color/yellow"
+                app:drawableStartCompat="@drawable/icon_star"
+                tools:ignore="RelativeOverlap" />
+
+            <TextView
+                android:id="@+id/txt_movie_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="1dp"
+                android:background="@color/white"
+                android:marqueeRepeatLimit="25"
+                android:padding="5dp"
+                android:text="@string/sdfdfsd_fdsdfsd_fdsfsdf"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
